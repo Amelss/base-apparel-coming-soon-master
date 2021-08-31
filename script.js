@@ -3,6 +3,8 @@ const error = document.getElementById("error");
 const email = document.getElementById("email");
 const message = document.querySelector(".message");
 
+// Enter button
+
 enterBtn.addEventListener("click", function () {
   if (email.validity.typeMismatch) {
     error.style.visibility = "visible";
@@ -18,6 +20,7 @@ enterBtn.addEventListener("click", function () {
   }
 });
 
+// When user clicks back into the email input box
 email.addEventListener("click", function () {
   message.textContent = "";
 });
